@@ -3,101 +3,98 @@ body{
 }
 .calculator{
     margin: auto;
-  width: 270px;
-  padding: 10px;
-  background-color: black;
-  height: 450px;
-  border-radius: 15px;
-  -webkit-box-shadow: 1px 1px 4px 0px black;
+    width: 270px;
+    padding: 10px;
+    background-color: black;
+    height: 450px;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 4px 0px black;
 
   
 }
 table{
-margin-top: 130px;
+    margin-top: 130px;
     border-spacing: 0px;   
     width: 100%;
     text-align:center;
     color: white;
 }
 
-span.light{
+button.light{
     margin-top: 150px;
-
     border-radius: 100%;
-     width: 30px;
-    height: 30px; 
+    width: 50px;
+    height: 50px; 
     padding: 10px;
     background-color:#afafaf;
     color: black;
 }
-span.orange{
-  
+button.orange{
     border-radius: 100%;
-     width: 30px;
-    height: 30px; 
+    width: 50px;
+    height: 50px; 
     padding: 10px;
     background-color: #f2a23b;
 }
-span.grey{
+button.grey{
 
     border-radius: 100%;
-     width: 30px;
-    height: 30px; 
+    width: 50px;
+    height: 50px; 
     padding: 10px;
     background-color: #323232;
 }
-span:link.grey, span:visited.grey, span:active.grey{
+button:link.grey, button:visited.grey, button:active.grey{
     background-color:  #323232;
     text-decoration: none;
     color: white;
     border-radius: 100%;  
 }
-span:hover.grey{
+button:hover.grey{
     background-color:  #878787;
 }
-span:link.orange, span:visited.orange, span:active.orange{
+button:link.orange, button:visited.orange, button:active.orange{
     background-color: #f2a23b;
     text-decoration: none;
     color: white;
     border-radius: 100%;
     
 }
-span:hover.orange{
+button:hover.orange{
     background-color: #fcc883;
 }
-span:link.light, span:visited.light, span:active.light{
+button:link.light, button:visited.light, button:active.light{
     background-color: #afafaf;
     text-decoration: none;
     color: black;
     border-radius: 100%;
     
 }
-span:hover.light{
+button:hover.light{
     background-color: white;
 }
 
-
-span:link.zero, button:visited.zero, span:active.zero{
+button:link.zero, button:visited.zero, button:active.zero{
     background-color: #323232;
     text-decoration: none;
     color: white;
     border-radius: 30px;
 
 }
-span:hover.zero{
+button:hover.zero{
     background-color:#878787;
     
 }
-span.zero{
+button.zero{
     padding-left: 53px;
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 30px;
+    height: 50px;
     background-color: #323232;
     border-radius: 30px;
 }
-.vvod{
+.number{
     position:absolute;
     top: 80px;
     right: 280px;
@@ -108,15 +105,42 @@ span.zero{
 .num{
     display:inline-flex;
     flex-flow: row wrap-reverse;
-    /* flex-direction:column ; */
     justify-content: center;
     width: 50px;
     height: 50px;
-     padding: 7px; 
-     border-radius: 100%;
-     font-size: 16pt;
+    padding: 7px; 
+    border-radius: 100%;
+    font-size: 16pt;
  }
  .zero{
     display: inline-table;
-
  }
+ 
+button{
+    color: white;
+    font-size: 15pt;
+    border: none;
+    font-family: 'San Francisco';
+
+}
+.number{
+    position: absolute;
+    top: 60px;
+    left: 275px;
+    height: 70px;
+    width: 230px;
+    background-color: black;
+    font-family: 'San Francisco';
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input{
+    text-align: right;
+    outline:none;
+}
