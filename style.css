@@ -9,88 +9,93 @@ body{
   height: 450px;
   border-radius: 15px;
   -webkit-box-shadow: 1px 1px 4px 0px black;
+
+  
 }
 table{
 margin-top: 130px;
     border-spacing: 0px;   
     width: 100%;
-    text-align: center;
+    text-align:center;
+    color: white;
 }
 
+span.light{
+    margin-top: 150px;
 
-a:link.grey, a:visited.grey, a:active.grey{
+    border-radius: 100%;
+     width: 30px;
+    height: 30px; 
+    padding: 10px;
+    background-color:#afafaf;
+    color: black;
+}
+span.orange{
+  
+    border-radius: 100%;
+     width: 30px;
+    height: 30px; 
+    padding: 10px;
+    background-color: #f2a23b;
+}
+span.grey{
+
+    border-radius: 100%;
+     width: 30px;
+    height: 30px; 
+    padding: 10px;
+    background-color: #323232;
+}
+span:link.grey, span:visited.grey, span:active.grey{
     background-color:  #323232;
     text-decoration: none;
     color: white;
-    border-radius: 100%;
-    
+    border-radius: 100%;  
 }
-a:hover.grey{
+span:hover.grey{
     background-color:  #878787;
 }
-a:link.orange, a:visited.orange, a:active.orange{
+span:link.orange, span:visited.orange, span:active.orange{
     background-color: #f2a23b;
     text-decoration: none;
     color: white;
     border-radius: 100%;
     
 }
-a:hover.orange{
+span:hover.orange{
     background-color: #fcc883;
 }
-a:link.light, a:visited.light, a:active.light{
+span:link.light, span:visited.light, span:active.light{
     background-color: #afafaf;
     text-decoration: none;
     color: black;
     border-radius: 100%;
     
 }
-a:hover.light{
+span:hover.light{
     background-color: white;
 }
 
-a.light{
-    margin-top: 150px;
-    /* display:inline-block; */
-    border-radius: 100%;
-     width: 30px;
-    height: 30px; 
-    padding: 10px;
-}
-a.orange{
-    /* display:inline-block; */
-    border-radius: 100%;
-     width: 30px;
-    height: 30px; 
-    padding: 10px;
-}
-a.grey{
-    
-    /* display:inline-block; */
-    border-radius: 100%;
-     width: 30px;
-    height: 30px; 
-    padding: 10px;
-}
-a:link.zero, a:visited.zero, a:active.zero{
+
+span:link.zero, button:visited.zero, span:active.zero{
     background-color: #323232;
     text-decoration: none;
     color: white;
     border-radius: 30px;
 
 }
-a:hover.zero{
+span:hover.zero{
     background-color:#878787;
     
 }
-a.zero{
-
-    /* width: 60px; */
+span.zero{
     padding-left: 53px;
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 30px;
+    background-color: #323232;
+    border-radius: 30px;
 }
 .vvod{
     position:absolute;
@@ -102,23 +107,16 @@ a.zero{
 
 .num{
     display:inline-flex;
-    
     flex-flow: row wrap-reverse;
     /* flex-direction:column ; */
     justify-content: center;
     width: 50px;
     height: 50px;
-     /* position: relative; */
-     /* top: 150px;
-     left: 3px; */
      padding: 7px; 
-     /* margin: 15px; */
      border-radius: 100%;
-     /* width: 30px;
-     height: 30px; */
      font-size: 16pt;
  }
  .zero{
     display: inline-table;
-    
+
  }
