@@ -118,19 +118,21 @@ button.zero{
  
 button{
     color: white;
-    font-size: 15pt;
+    font-size: 16pt;
     border: none;
     font-family: 'San Francisco';
 
 }
 .number{
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 275px;
+    padding: 0;
     height: 70px;
     width: 230px;
     background-color: black;
     font-family: 'San Francisco';
+    font-size: 55pt;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
