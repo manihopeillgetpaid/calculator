@@ -9,17 +9,7 @@ body{
     height: 450px;
     border-radius: 15px;
     -webkit-box-shadow: 1px 1px 4px 0px black;
-
-  
 }
-.container{
-    margin-top: 50px;
-    border-spacing: 0px;   
-    width: 100%;
-    text-align:center;
-    color: white;
-}
-
 button.light-gray{
     margin-top: 150px;
     border-radius: 100%;
@@ -36,7 +26,7 @@ button.orange{
     padding: 10px;
     background-color: #f2a23b;
 }
-button.grey{
+button.gray{
 
     border-radius: 100%;
     width: 50px;
@@ -44,13 +34,13 @@ button.grey{
     padding: 10px;
     background-color: #323232;
 }
-button:link.grey, button:visited.grey, button:active.grey{
+button:link.gray, button:visited.gray, button:active.gray{
     background-color:  #323232;
     text-decoration: none;
     color: white;
     border-radius: 100%;  
 }
-button:hover.grey{
+button:hover.gray{
     background-color:  #878787;
 }
 button:link.orange, button:visited.orange, button:active.orange{
@@ -93,16 +83,22 @@ button.zero{
     height: 50px;
     background-color: #323232;
     border-radius: 30px;
-}
-.number{
-    position:absolute;
-    top: 80px;
-    right: 280px;
+} 
+button{
     color: white;
-    font-size: 45pt;
+    font-size: 16pt;
+    border: none;
+    font-family: 'San Francisco';
+    margin-top: 10px;
+    border-spacing: 0px;   
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.num{
+.button_container{
+    
     display:inline-flex;
     flex-flow: row wrap-reverse;
     justify-content: center;
@@ -111,22 +107,15 @@ button.zero{
     padding: 7px; 
     border-radius: 100%;
     font-size: 16pt;
+    text-align:center;
  }
  .zero{
     display: inline-table;
-    width: 119px;
+    width: 115px;
  }
- 
-button{
-    color: white;
-    font-size: 16pt;
-    border: none;
-    font-family: 'San Francisco';
-
-}
-.number{
-    position:static;
-    margin-bottom: 10px;
+.main_input{
+    position: absolute;
+    margin-top: 50px;
     margin-left: 10px;
     padding: 0;
     height: 70px;
@@ -134,6 +123,8 @@ button{
     background-color: black;
     font-family: 'San Francisco';
     font-size: 55pt;
+    color: white;  
+    
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -148,3 +139,4 @@ input{
     text-align: right;
     outline:none;
 }
+
